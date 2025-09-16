@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Fans Em-Yu🥰</title>
+</head>
+
+
+
+<body>
+
+    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" alt="MU Logo" width="100">
+    <h1>Formulir Pendaftaran Fans Em-Yu😹</h1>
+
+    <form action="/proses_pendaftaran" method="POST">
+
+  
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            
+          
+            <p>
+                <label for="nama_lengkap">Nama Lengkap:</label><br>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Misal : Andre Onana😋😛" required autofocus maxlength="100">
+            </p>
+
+            <p>
+                <label for="password">Password Akun:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+            
+            <p>
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="emyubapuk@gmail.com" required>
+            </p>
+
+
+            <p>
+                <label for="usia">Usia:</label><br>
+                <input type="number" id="usia" name="usia" min="17" max="99" value="17">
+            </p>
+            
+            <p>
+                <label for="tgl_bergabung">Tanggal Keinginan Bergabung:</label><br>
+                <input type="date" id="tgl_bergabung" name="tgl_bergabung" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Fansbase</legend>
+
+      
+            <p>
+                <label for="regional">Pilih Regional Terdekat:</label><br>
+                <select id="regional" name="regional">
+                    <option value="">-- Pilih Regional --</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="medan">Medan</option>
+                </select>
+            </p>
+
+            
+            <p>
+                <label>Ukuran Jersey:</label><br>
+                <input type="radio" id="size_m" name="ukuran_jersey" value="M" checked> <label for="size_m">M</label><br>
+                <input type="radio" id="size_l" name="ukuran_jersey" value="L"> <label for="size_l">L</label><br>
+                <input type="radio" id="size_xl" name="ukuran_jersey" value="XL"> <label for="size_xl">XL</label>
+            </p>
+
+    
+            <p>
+                <label>Kegiatan yang diminati:</label><br>
+                <input type="checkbox" id="nobar" name="kegiatan[]" value="nobar"> <label for="nobar">Nonton Bareng (Nobar)</label><br>
+                <input type="checkbox" id="futsal" name="kegiatan[]" value="futsal"> <label for="futsal">Futsal / Sepak Bola</label><br>
+                <input type="checkbox" id="gathering" name="kegiatan[]" value="gathering"> <label for="gathering">Baywan PES💅</label>
+            </p>
+            
+            
+            <p>
+                <label for="pesan">Pesan untuk Pemain Favoritmu:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Tulis pesan singkat di sini... (JANGAN ONANA!!)"></textarea>
+            </p>
+
+            
+            <p>
+                <label for="warna_syal">Vote warna buat Syal Kustom:</label><br>
+                <input type="color" id="warna_syal" name="warna_syal" value="#DA291C">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Verifikasi & Lain-lain</legend>
+            
+            
+            <p>
+                <label for="foto_ktp">Upload Foto KTP (untuk verifikasi):</label><br>
+                <input type="file" id="foto_ktp" name="foto_ktp" placeholder="aman aman, nngk buat pinjol🗿" accept="image/jpeg, image/png, .pdf" required>
+            </p>
+
+            
+            <p>
+                <label for="foto_koleksi">Upload Foto Koleksi MU-mu (opsional, boleh lebih dari satu):</label><br>
+                <input type="file" id="foto_koleksi" name="foto_koleksi[]" accept="image/*" multiple>
+            </p>
+
+            
+            <p>
+                <label for="nomor_anggota">Nomor Anggota (digenerate otomatis):</label><br>
+                <input type="text" id="nomor_anggota" name="nomor_anggota" value="Menunggu Persetujuan" readonly>
+            </p>
+
+            <p>
+                <label for="status_keanggotaan">Status Keanggotaan:</label><br>
+                <input type="text" id="status_keanggotaan" name="status_keanggotaan" value="Calon Anggota" disabled>
+            </p>
+
+            <input type="hidden" name="form_version" value="1.0-2025">
+        </fieldset>
+
+      
+        <fieldset>
+            <legend>Kustomisasi Kartu Anggota</legend>
+            <p>Tanda tangan digital Anda di sini:</p>
+            <canvas id="tanda_tangan" width="300" height="150" style="border:1px solid #000;"></canvas>
+        </fieldset>
+
+        
+        <p>
+            <button type="submit">Gasss Daftar Sekarang!</button>
+            <button type="reset">Reset Formulir</button>
+            <button type="button">Chant EM-YUUU!</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
