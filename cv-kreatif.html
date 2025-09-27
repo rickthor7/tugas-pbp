@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio Orang Ganteng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 40px;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 1100px;
+            margin: 0 auto;
+            background-color: #2c2c2c;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .kolom-kiri {
+            width: 380px;
+            background: linear-gradient(to bottom, #3a3a3a, #2a2a2a);
+            padding: 40px;
+            border-radius: 15px 0 0 15px;
+            text-align: center;
+        }
+        
+        .foto-profil {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #58a6ff;
+            background-color: #555;
+        }
+
+        .kolom-kanan {
+            width: 720px;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 22px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        
+        .sub-judul {
+            color: #bbbbbb;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #cccccc;
+        }
+
+        a {
+            color: #8ab4f8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+        
+        .info-kontak li {
+            text-align: left;
+        }
+
+        .pengalaman-item {
+            margin-bottom: 25px;
+        }
+        
+        .pengalaman-item p {
+            margin-top: 2px;
+            margin-bottom: 8px;
+            color: #bbbbbb;
+        }
+
+        .deskripsi-pengalaman {
+            padding-left: 20px;
+        }
+        
+        .deskripsi-pengalaman li {
+            list-style-type: disc;
+            margin-bottom: 8px;
+        }
+
+        .keterampilan-item {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #444;
+            border-radius: 5px;
+            height: 12px;
+        }
+
+        .progress {
+            background: linear-gradient(to right, #58a6ff, #8ab4f8);
+            height: 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="kolom-kiri">
+            <img src="https://cdn.pixabay.com/photo/2020/05/09/21/43/hacker-5151533_1280.jpg" alt="Foto Profil Mohamad Thoriq" class="foto-profil">
+            <h1>Mohamad Thoriq Dhiya Ul Haq</h1>
+            <p class="sub-judul"><b>Informatics Engineering Student</b></p>
+            <hr>
+            
+            <h2>Kontak</h2>
+            <ul class="info-kontak">
+                <li><b>Telepon:</b> +62812-1333-8952</li>
+                <li><b>Email:</b> <a href="mailto:cs@mohamadthoriq.my.id">cs@mohamadthoriq.my.id</a></li>
+                <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/mohamad-thoriq-dhiya-ul-haq-38698a2b3" target="_blank">mohamad-thoriq</a></li>
+                <li><b>Lokasi:</b> Surabaya, Indonesia</li>
+            </ul>
+
+            <h2>Keterampilan</h2>
+            <div class="keterampilan-item">
+                <p>Fullstack Development</p>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="keterampilan-item">
+                <p>UI/UX Design</p>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="keterampilan-item">
+                <p>Client Management (CRM)</p>
+                <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="keterampilan-item">
+                <p>Microsoft Office Suite</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+        </div>
+
+        <div class="kolom-kanan">
+            <h2>Tentang Saya</h2>
+            <p>
+                Seorang mahasiswa Teknik Informatika dengan pengalaman lebih dari 4 tahun di bidang pengembangan website fullstack. Mampu menggunakan berbagai bahasa pemrograman seperti PHP, C++, Javascript, hingga Python. Telah berhasil mengelola 5 website klien dengan teknologi yang bervariasi dan secara konsisten mempertahankan skor kepuasan klien sebesar 98%.
+            </p>
+
+            <h2>Pengalaman Profesional</h2>
+            <div class="pengalaman-item">
+                <h3>Full Stack Developer</h3>
+                <p><i>www.bocilteknologi.my.id</i> | Januari 2018 - Sekarang</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Mengelola postingan blog dan mempertahankan skor kepuasan pembaca di angka 98%.</li>
+                    <li>Merombak total tampilan lama menjadi lebih user friendly, modern, dan minimalis.</li>
+                    <li>Secara terus menerus berhasil menarik pengunjung website hingga 800 viewer.</li>
+                </ul>
+            </div>
+            <div class="pengalaman-item">
+                <h3>Staff Tata Usaha</h3>
+                <p><i>Tahfidz Office MQ - Jombang, Indonesia</i> | Januari 2022 - Januari 2024</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Mengoperasikan aplikasi MS Office untuk keperluan pendataan santri.</li>
+                    <li>Membangun website dengan PHP & MySQL untuk transparansi data keuangan.</li>
+                    <li>Memelihara dan mengembangkan jaringan internet di lingkungan kerja.</li>
+                </ul>
+            </div>
+             <div class="pengalaman-item">
+                <h3>Sales Department Intern</h3>
+                <p><i>Publishing Nurul Falah - Surabaya, Indonesia</i> | Juni 2025 - Agustus 2025</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Membantu proses input data jumlah orderan.</li>
+                    <li>Bertanggung jawab dalam mencapai target penjualan lokal dan nasional.</li>
+                </ul>
+            </div>
+
+            <h2>Prestasi</h2>
+            <div class="pengalaman-item">
+                <h3>Silver Medal - Internasional</h3>
+                <p><i>Indonesian International IoT Olympiad - IYSA</i> | Juni 2025</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Mengembangkan Smartwatch IoT pendeteksi gempa.</li>
+                </ul>
+            </div>
+            <div class="pengalaman-item">
+                <h3>Juara 1 - Nasional</h3>
+                <p><i>Essay Inspire Duta Inspirasi - Kemenpora</i> | Januari 2025</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Membuat inovasi teknologi pendidikan dan prototype Smartwatch terintegrasi SmartClass.</li>
+                </ul>
+            </div>
+            <div class="pengalaman-item">
+                <h3>Finalis & Best Paper - Nasional</h3>
+                <p><i>Bussiness Plan HMP Manajemen UIN Malang</i> | September 2024</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Membuat inovasi aplikasi pengembangan UMKM produk kulit.</li>
+                </ul>
+            </div>
+            <div class="pengalaman-item">
+                <h3>Finalis - Nasional</h3>
+                <p><i>Essay Sustainable Innovations Essay Cakap Riset</i> | Mei 2025</p>
+                <ul class="deskripsi-pengalaman">
+                    <li>Merancang aplikasi (UI/UX) untuk relasi mahasiswa dan alumni.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
