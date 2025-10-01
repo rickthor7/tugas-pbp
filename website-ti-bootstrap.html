@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI FT UNESA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ff9800;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        .news-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .news-date {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .expertise-item {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .expertise-item:hover {
+            background-color: #e9ecef;
+        }
+        .expertise-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .visitor-counter {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .crucible-section {
+            background-color: var(--secondary-color);
+            padding: 40px 0;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TI FT UNESA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#heroCarousel" data-bs-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://sindig-ft.unesa.ac.id/pluginfile.php/198771/mod_resource/content/1/fa8085a5-ac84-493e-829b-baaa43aa91e1.jpg" class="d-block w-100" alt="Campus Building">
+                <div class="carousel-caption">
+                    <h1>Informatics Engineering</h1>
+                    <p>Faculty of Engineering - Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://sindig-ft.unesa.ac.id/pluginfile.php/198770/mod_resource/content/1/1746395e-6ce7-4604-9040-53a054651afe.jpg" class="d-block w-100" alt="Students in Lab">
+            </div>
+            <div class="carousel-item">
+                <img src="https://sindig-ft.unesa.ac.id/pluginfile.php/198769/mod_resource/content/1/14a73972-a749-49ca-a6cb-5b742b59f510.jpg" class="d-block w-100" alt="Lecture Hall">
+            </div>
+            <div class="carousel-item">
+                <img src="https://sindig-ft.unesa.ac.id/pluginfile.php/198768/mod_resource/content/1/b7e7a8fe-334f-44b0-9308-0d1987065bc2.jpg" class="d-block w-100" alt="Campus Activity">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="section-title">LATEST NEWS</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card news-card">
+                                <img src="https://picsum.photos/seed/news1/400/250.jpg" class="card-img-top" alt="News 1">
+                                <div class="card-body">
+                                    <p class="news-date">October 1, 2025</p>
+                                    <h5 class="card-title">Informatics Engineering Workshop</h5>
+                                    <p class="card-text">Join our upcoming workshop on the latest trends in software development and AI technologies.</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card news-card">
+                                <img src="https://picsum.photos/seed/news2/400/250.jpg" class="card-img-top" alt="News 2">
+                                <div class="card-body">
+                                    <p class="news-date">September 28, 2025</p>
+                                    <h5 class="card-title">Student Achievement in Programming Competition</h5>
+                                    <p class="card-text">Our students won first place in the National Programming Competition held in Jakarta.</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card news-card">
+                                <img src="https://picsum.photos/seed/news3/400/250.jpg" class="card-img-top" alt="News 3">
+                                <div class="card-body">
+                                    <p class="news-date">September 25, 2025</p>
+                                    <h5 class="card-title">New Collaboration with Tech Industry</h5>
+                                    <p class="card-text">Informatics Engineering UNESA establishes partnership with leading tech companies for internship programs.</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card news-card">
+                                <img src="https://picsum.photos/seed/news4/400/250.jpg" class="card-img-top" alt="News 4">
+                                <div class="card-body">
+                                    <p class="news-date">September 20, 2025</p>
+                                    <h5 class="card-title">Research Publication in International Journal</h5>
+                                    <p class="card-text">Our faculty members published groundbreaking research on machine learning applications.</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="visitor-counter">
+                        <h5>Visitor Statistics</h5>
+                        <div class="d-flex justify-content-around mt-3">
+                            <div>
+                                <h3>1,234</h3>
+                                <p>Today</p>
+                            </div>
+                            <div>
+                                <h3>15,678</h3>
+                                <p>This Month</p>
+                            </div>
+                            <div>
+                                <h3>234,567</h3>
+                                <p>Total</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="section-title mt-4">UPCOMING EVENTS</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">Seminar on AI Ethics</h6>
+                                <small>Oct 5, 2025</small>
+                            </div>
+                            <p class="mb-1">Exploring ethical considerations in AI development</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">Hackathon 2025</h6>
+                                <small>Oct 12, 2025</small>
+                            </div>
+                            <p class="mb-1">24-hour coding competition for students</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">Industry Talk</h6>
+                                <small>Oct 18, 2025</small>
+                            </div>
+                            <p class="mb-1">Guest speakers from leading tech companies</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">AREAS OF EXPERTISE</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5>Artificial Intelligence</h5>
+                        <p>Machine learning, deep learning, and neural networks</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5>Cybersecurity</h5>
+                        <p>Network security, cryptography, and ethical hacking</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5>Mobile Development</h5>
+                        <p>iOS, Android, and cross-platform applications</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5>Data Science</h5>
+                        <p>Big data analytics, data mining, and visualization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="crucible-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">INFORMATICS ENGINEERING IS THE CRUCIBLE...</h2>
+                    <p>...where innovation meets excellence. Our program is designed to equip students with the knowledge and skills needed to thrive in the rapidly evolving field of technology.</p>
+                    <p>With a curriculum that balances theoretical foundations with practical applications, we prepare our graduates to become leaders in the digital transformation era. Our state-of-the-art facilities and experienced faculty ensure that students receive a comprehensive education that meets industry standards.</p>
+                    <p>Join us in shaping the future of technology and making a positive impact on society through innovative solutions and cutting-edge research.</p>
+                    <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://picsum.photos/seed/campus/600/400.jpg" class="img-fluid rounded" alt="Campus Life">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Informatics Engineering</h5>
+                    <p>Faculty of Engineering</p>
+                    <p>Universitas Negeri Surabaya</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampus Ketintang, Surabaya</p>
+                    <p><i class="fas fa-phone"></i> +62 31 8280009</p>
+                    <p><i class="fas fa-envelope"></i> ti@unesa.ac.id</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 Informatics Engineering, FT UNESA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+                                                                  </html>
